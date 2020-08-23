@@ -1,0 +1,82 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/recommend/recommend",
+    "pages/record/record",
+    "pages/record-search-breakfast/record-search-breakfast",
+    "pages/yesterday record/yesterday record",
+    "pages/community/community",
+    "pages/community_search/community_search",
+    "pages/community_post/community_post",
+    "pages/my/my"
+     
+  ],
+  "subpackages": [
+    {
+      "root": "packageA",
+      "pages": [
+        "pages/search/search",    
+        "pages/nutrition-searched/nutrition-searched",
+        "pages/nutrition-ate/nutrition-ate",
+        "pages/nutrition-collect/nutrition-collect" 
+      ]
+    },
+    {
+      "root": "packageB",
+      "pages": [
+        "pages/robot/robot"    
+      ]
+    },{
+      "root": "packageC",
+      "pages": [
+        "pages/activity/activity"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#0066B2",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "吃啥好鸭",
+    "backgroundColor": "#0066B2",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#7C94A5",
+    "selectedColor": "#0066B2",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首 页",
+        "iconPath": "./pictures/首页未选中.png",
+        "selectedIconPath": "./pictures/首页选中.png"
+      },
+      {
+        "pagePath": "pages/recommend/recommend",
+        "text": "饮食推荐",
+        "iconPath": "./pictures/饮食推荐未选中.png",
+        "selectedIconPath": "./pictures/饮食推荐选中.png"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "text": "饮食记录",
+        "iconPath": "./pictures/饮食记录未选中.png",
+        "selectedIconPath": "./pictures/饮食记录选中.png"
+      },
+      {
+
+        "pagePath": "pages/community/community",
+        "text": "社 区",
+        "iconPath": "./pictures/社区未选中.png",
+        "selectedIconPath": "./pictures/社区选中.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我 的",
+        "iconPath": "./pictures/我未选中.png",
+        "selectedIconPath": "./pictures/我选中.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
