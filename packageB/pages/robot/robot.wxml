@@ -1,0 +1,84 @@
+<!--packageB/pages/robot/robot.wxml-->
+<!-- <view class="main"> -->
+<!--对话框内容  -->
+<!-- <scroll-view scroll-y="true" class="scroll_view" scroll-into-view="{{ toView }}">
+        <view class="message" wx:for="{{ chatMsg }}"  wx:key="{{mid}}" id="{{item.mid}}">
+            <view class="main" class="{{ item.type==1?'self':null }}">
+                <view class="user">
+                    <text>{{ item.username }}</text>
+                </view>
+                <image class="avatar" src="/pictures/kefu.jpg"/>
+                <view class="msg">
+                   <view wx:if="{{item.type==2}}"  wx:for-item="answer" wx:for="{{item.data}}">
+                    <view data-web-url="{{answer.dizhi}}" bindtap="toWebview" style="margin-top: 2px;">{{ index+1 +"."+ answer.title }}</view>
+                  </view> 
+                  <text wx:if="{{item.type==1}}" style="float: left;margin-top: 2px;">{{ item.data }}</text>
+                </view>
+            </view>
+        </view>
+    </scroll-view> -->
+
+<!--输入框和发送按钮  -->
+<!-- <view class="room_bar">
+        <form>
+            <view class="f-row">
+            <image src="/images/yuyin.png" class="yuyinimg"></image>
+                <input class="f news" type="text" value="{{ inputMessage }}"
+                       placeholder="输入新消息" placeholder-style="color:#CFCFCF;padding-left:5px;" bindinput="bindMessage"/>
+                <button class="send_btn" bindtap="sendMessage" formType="reset">发送</button>
+            </view>
+        </form>
+    </view>
+</view> -->
+
+<view class="container">
+	<scroll-view scroll-y="true" class="scroll_view">
+		<!-- <view class="chat_list">
+			<block wx:for="{{chatList}}" wx:key="time">
+				<view class="chat-left" wx:if="{{item.orientation == 'l'}}">
+					<image class="avatar-img" src="../../../pictures/kefu.jpg"></image>
+					<text>{{item.text}}</text>
+				</view>
+				<view class="chat-right" wx:if="{{item.orientation == 'r'}}">
+					<text>{{item.text}}{{item.url}}</text>
+					<image class="avatar-img" src="{{userInfo.avatarUrl}}"></image>
+				</view>
+			</block>
+		</view> -->
+        <view class="message" wx:for="{{chatList}}" wx:key="time">
+            <view class="chat-left" wx:if="{{item.orientation == 'l'}}">
+                <view class="user">
+                    <text>{{item.username}}</text>
+                </view>
+                <image class="avatar-img" src="../../pictures/kefu.jpg"/>
+                <view class="msg">
+                    <text>{{item.text}}</text>
+                </view>
+            </view>
+            <view class="self" wx:if="{{item.orientation == 'r'}}">
+                <view class="user">
+                    <text>{{item.username}}</text>
+                </view>
+                <image class="avatar-img" src="{{userInfo.avatarUrl}}"/>
+                <view class="msg">
+                    <text>{{item.text}}{{item.url}}</text>
+                </view>
+            </view>
+        </view>
+	</scroll-view>
+	<view class="room_bar">
+		<form bindsubmit="sendChat">
+			<view class="f-row">
+				<image src="../../../images/yuyin.png" class="yuyinimg"></image>
+				<input class="news" type="text" value="{{askWord}}" placeholder="输入新消息" placeholder-style="color:#CFCFCF;padding-left:5px;" bindconfirm="sendChat" name="ask_word"/>
+				<button class="send_btn" formType="submit">发送</button>
+			</view>
+		</form>
+	</view>
+	<!-- <form bindsubmit="sendChat">
+		<view class="ask-input-word">
+			<input placeholder="" name="ask_word" type="text" bindconfirm="sendChat" value="{{askWord}}" />
+			<button formType="submit" size="mini">发送</button>
+		</view>
+	</form> -->
+</view>

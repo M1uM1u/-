@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "营养素/热量查询",
+  "usingComponents": {
+    "canvas-ring": "/components/canvas-ring/canvas-ring"
+  }
+}

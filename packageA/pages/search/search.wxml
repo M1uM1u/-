@@ -1,0 +1,80 @@
+<view class="navigate">
+  <view class="search-border">  
+    <view class="search">
+      <icon type="search" size="21" class="icon"></icon>
+      <input placeholder="想吃啥呢" class="input" bindinput="FoodInput"></input>
+      <icon type="cancel" size="23" class="icon"></icon>
+    </view>
+  </view>
+  <button class="done" bindtap="searchbtnClick" >完成</button>
+</view>
+
+<view class="contain">
+  <view class='tabbar'>
+    <view class="tabbar_item {{swipeIndex==0 ? 'ontop' : ''}}" data-current='0' bindtap="swichNav">
+      <view>搜索</view>
+    </view>
+    <view class="tabbar_item {{swipeIndex==1 ? 'ontop' : ''}}" data-current='1' bindtap="swichNav">
+      <view>我吃过的</view>
+    </view>
+    <view class="tabbar_item {{swipeIndex==2 ? 'ontop' : ''}}" data-current='2' bindtap="swichNav">
+      <view>我收藏的</view>
+    </view>
+  </view>
+
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange" style="overflow-y:hidden">
+    <swiper-item>
+      <view class="food-column">
+        <navigator class="food flex-wrp"
+        wx:for="{{FoodList}}"
+        wx:key="_id"
+        url="/packageA/pages/nutrition-searched/nutrition-searched?food={{item.food}}&nengliang={{item.nengliang}}&danbaizhi={{item.danbaizhi}}&tanshui={{item.tanshui}}&zhifang={{item.zhifang}}"
+        >
+          <view class="food-pic flex-item" >
+            <image src="{{item.foods_logo}}"></image>
+          </view>
+          <view class="food-word flex-item">
+            <view class="food-word1">{{item.food}}</view>
+            <view class="food-word2">{{item.nengliang}}千卡/100g</view>
+          </view>
+        </navigator>
+      </view>
+    </swiper-item>
+
+    <swiper-item>
+      <view class="food-column">
+        <navigator class="food flex-wrp"
+        wx:for="{{foodsListAte}}"
+        wx:key="id"
+        url="/packageA/pages/nutrition-ate/nutrition-ate"
+        >
+          <view class="food-pic flex-item" >
+            <image src="{{item.foods_logo}}"></image>
+          </view>
+          <view class="food-word flex-item">
+            <view class="food-word1">{{item.foods_word1}}</view>
+            <view class="food-word2">{{item.foods_word2}}</view>
+          </view>
+        </navigator>
+      </view>
+    </swiper-item>
+
+    <swiper-item>
+      <view class="food-column">
+        <navigator class="food flex-wrp"
+        wx:for="{{foodsListCollect}}"
+        wx:key="id"
+        url="/packageA/pages/nutrition-collect/nutrition-collect"
+        >
+          <view class="food-pic flex-item" >
+            <image src="{{item.foods_logo}}"></image>
+          </view>
+          <view class="food-word flex-item">
+            <view class="food-word1">{{item.foods_word1}}</view>
+            <view class="food-word2">{{item.foods_word2}}</view>
+          </view>
+        </navigator>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

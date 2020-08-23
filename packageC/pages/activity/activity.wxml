@@ -1,0 +1,62 @@
+<view class="contain">
+	<view class='tabbar'>
+		<view class="tabbar_item {{swipeIndex==0 ? 'ontop' : ''}}" data-current='0' bindtap="swichNav">
+			<image src="../../../pictures/danren-yes.png" class="image2" style="position:relative; z-index:9999"></image>
+		</view>
+		<view class="tabbar_item {{swipeIndex==1 ? 'ontop' : ''}}" data-current='1' bindtap="swichNav">
+			<image src="../../../pictures/duoren-no.png" class="image3" style="position:relative; z-index:9999"></image>
+		</view>
+	</view>
+	<scroll-view scroll-y class="scrollPage">
+		<swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange" style="overflow-y:hidden">
+			<swiper-item class="swipertype">
+				<view class="activity-column">
+					<navigator class="ac" open-type="switchTab" url="{{item.url}}" hover-class="none" wx:for="{{list1}}">
+						<view class="activity">
+							<image src="{{item.img}}" class="image1" style="position:relative; z-index:-1"></image>
+							<view class="title">{{item.title}}</view>
+							<view class="title2">{{item.title2}}</view>
+							<view class="title3">{{item.title3}}</view>
+						</view>
+					</navigator>
+				</view>
+			</swiper-item>
+
+			<swiper-item class="swipertype">
+				<view class="activity-column">
+					<navigator class="ac" open-type="switchTab" url="{{item.url}}" hover-class="none" wx:for="{{list2}}">
+						<view class="activity">
+							<image src="{{item.img}}" class="image1" style="position:relative; z-index:-1"></image>
+							<view class="title">{{item.title}}</view>
+							<view class="title2">{{item.title2}}</view>
+							<view class="title3">{{item.title3}}</view>
+						</view>
+					</navigator>
+				</view>
+			</swiper-item>
+		</swiper>
+	</scroll-view>
+</view>
+<!-- <swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange" style="overflow-y:hidden">
+		<swiper-item>
+      <view class="swiper1_top">
+    		<view class="swiper1_top_item {{itemIndex1==0 ? 'on' : ''}}" data-current1='0' bindtap="itemSwich1">
+          <image src="danren-" class="image1" style="position:relative; z-index:9999"></image>
+        </view>
+	    	<view class="swiper1_top_item {{itemIndex1==1 ? 'on' : ''}}" data-current1='1' bindtap="itemSwich1">
+          <image src="{{item.img}}" class="image1" style="position:relative; z-index:9999"></image>
+        </view>
+    	</view>
+
+      <view wx:for="{{list}}">
+        <navigator class="ac" open-type="switchTab" url="{{item.url}}" hover-class="none">
+          <view class="activity">
+            <image src="{{item.img}}" class="image1" style="position:relative; z-index:-1"></image>
+            <view class="title">{{item.title}}</view>
+            <view class="title2">{{item.title2}}</view>
+            <view class="title3">{{item.title3}}</view>
+          </view>
+        </navigator>
+      </view>
+    </swiper-item>
+  </swiper> -->

@@ -1,0 +1,65 @@
+<view class="navigate">
+  <view class="search-border">  
+    <view class="search">
+      <icon type="search" size="21" class="icon"></icon>
+      <input placeholder="想吃啥呢" class="input"></input>
+      <icon type="cancel" size="23" class="icon"></icon>
+    </view>
+  </view>
+  <button class="done">完成</button>
+</view>
+
+<view class="contain">
+  <view class='tabbar'>
+    <view class="tabbar_item">
+      <view>搜索</view>
+    </view>
+    <view class="ontop">
+      <view>我吃过的</view>
+    </view>
+    <view class="tabbar_item">
+      <view>我收藏的</view>
+    </view>
+  </view>
+</view>
+
+<view class="food-column">
+  <view class="food flex-wrp" >
+    <view class="food-pic flex-item" >
+      <image src="../../pictures/apple.jpg"></image>
+    </view>
+    <view class="food-word flex-item">
+      <view class="food-word1">苹果</view>
+      <view class="food-word2">53.0千卡/100g</view>
+    </view>
+  </view>
+</view>
+
+<view class="nutritions-column">
+  <view class="title">营养元素</view>
+  <view class="nutritions">
+    <view class="nutrition">
+      <view class="progress">
+        <canvas-ring id="canvasRing" value="94" canvasWidth="100" lineWidth="11" lineColor="#B1D3EC" valueColor="black"></canvas-ring>
+      </view>
+      <view class="word1">碳水化合物</view>
+      <view class="word2">13.7g</view>
+    </view>
+    <view class="nutrition">
+      <view class="progress">
+        <canvas-ring id="canvasRing1" value="3" canvasWidth="100" lineWidth="11" lineColor="#6CAAD9" valueColor="black"></canvas-ring>
+      </view>
+      <view class="word1">蛋白质</view>
+      <view class="word2">0.2g</view>
+    </view>
+    <view class="nutrition">
+      <view class="progress">
+        <canvas-ring id="canvasRing2" value="3" canvasWidth="100" lineWidth="11" lineColor="#0066B2" valueColor="black"></canvas-ring>
+      </view>
+      <view class="word1">脂肪</view>
+      <view class="word2">0.2g</view>
+    </view>
+  </view>
+</view>
+
+

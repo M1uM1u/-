@@ -1,0 +1,397 @@
+/* packageB/pages/robot/robot.wxss */
+
+/* .f-row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 7rpx;
+}
+
+.main {
+  width: 100%;
+  height: 50%;
+}
+
+.scroll_view, .scroll_view_change {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 75px;
+}
+
+.scroll_view_change {
+  bottom: 220px;
+}
+
+.message {
+  width: 92%;
+  height: auto;
+  padding: 10px 15px;
+}
+
+.user text {
+  margin: auto auto 4px 0;
+  font-size: 12px;
+  color: #dcdcdc;
+  display: block;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  margin: 0 10px 0 0;
+  padding-top: 3px;
+  border-radius: 3px;
+  float: left;
+}
+
+.msg {
+  display: inline-block;
+  position: relative;
+  padding: 5px 10px;
+  max-width: calc(85% - 40px);
+  font-size: 12px;
+  overflow: hidden;
+  text-align: left;
+  word-break: break-all;
+  background-color: #EDEDED;
+  border-radius: 4px;
+}
+
+.msg text {
+  line-height: 1.5;
+}
+
+.msg :before {
+  content: " ";
+  position: absolute;
+  top: 9px;
+  right: 100%;
+  border: 6px solid transparent;
+  border-right-color: #EDEDED;
+}
+
+.self {
+  text-align: right;
+}
+
+.self .avatar {
+  float: right;
+  margin: 0 0 0 10px;
+}
+
+.self .user {
+  margin: auto 2px 4px auto;
+  font-size: 12px;
+  color: #dcdcdc;
+}
+
+.self .msg {
+  background-color: #B1D3EC;
+}
+
+.self .msg :before {
+  right: inherit;
+  left: 100%;
+  border-right-color: transparent;
+  border-left-color: #B1D3EC;
+}
+
+.room_bar {
+  width: 100%;
+  height: 90rpx;
+  border-top: 1px solid #CFCFCF;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #0066B2;
+}
+
+.send_btn {
+  width: 100rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 14px;
+  font-weight:600;
+  color: #0066B2;
+  padding: 0;
+  margin: 4px 8px auto auto;
+  background-color: #fff;
+}
+
+.room_bar form {
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  display: block;
+}
+
+.news {
+  background-color: #fff;
+  width: 70%;
+  height: 30px;
+  border: 1px solid #6cAAD9;
+  border-radius: 5px;
+  font-size: 14px;
+  padding-left: 4px;
+  margin: 4px 2px 4px 6px;
+}
+.yuyinimg{
+  position: relative;
+  margin-left: 10rpx;
+  margin-top: 12rpx;
+  width: 52rpx;
+  height: 52rpx;
+} */
+
+.container {
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 15rpx;
+  background-color: gainsboro;
+}
+.scroll_view {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 75px;
+}
+
+.message {
+  flex: 1;
+  width: 92%;
+  height: auto;
+  padding: 10px 15px;
+}
+
+.user text {
+  margin: auto auto 4px 0;
+  font-size: 12px;
+  color: #dcdcdc;
+  display: block;
+}
+.avatar-img {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 70rpx;
+  margin-left: -25rpx;
+}
+/* .avatar {
+  width: 32px;
+  height: 32px;
+  margin: 0 10px 0 0;
+  padding-top: 3px;
+  border-radius: 3px;
+  float: left;
+}
+
+.msg {
+  display: inline-block;
+  position: relative;
+  padding: 5px 10px;
+  max-width: calc(85% - 40px);
+  font-size: 12px;
+  overflow: hidden;
+  text-align: left;
+  word-break: break-all;
+  background-color: #EDEDED;
+  border-radius: 4px;
+} */
+.msg {
+  display: inline-block;
+  position: relative;
+  padding: 5rpx 20rpx;
+  max-width: calc(85% - 40px);
+  font-size: 25rpx;
+  overflow: hidden;
+  text-align: left;
+  word-break: break-all;
+  background-color: #EDEDED;
+  border-radius: 4rpx;
+  margin: 0 25rpx
+} 
+
+.msg text {
+  line-height: 2;
+}
+
+.msg :before {
+  content: " ";
+  position: absolute;
+  top: 9px;
+  right: 100%;
+  border: 6px solid transparent;
+  border-right-color: #EDEDED;
+}
+
+
+.chat-left {
+  display: flex;
+  align-items: center;
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+}
+
+/* .chat-left text {
+  flex: 1;
+  margin-left: 10rpx;
+  padding: 10rpx 5rpx;
+  background-color: white;
+  border-radius: 15rpx;
+  word-break: break-all;
+  font-weight: 25rpx;
+} */
+
+/* .chat-left {
+  display: inline-block;
+  position: relative;
+  padding: 5px 10px;
+  max-width: calc(85% - 40px);
+  font-size: 12px;
+  overflow: hidden;
+  text-align: left;
+  word-break: break-all;
+  background-color: #EDEDED;
+  border-radius: 4px;
+}
+
+.chat-left text {
+  line-height: 1.5;
+}
+
+.chat-left :before {
+  content: " ";
+  position: absolute;
+  top: 9px;
+  right: 100%;
+  border: 6px solid transparent;
+  border-right-color: #EDEDED;
+} */
+
+/* .chat-right {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+} */
+
+/* .chat-right text {
+  flex: 1;
+  margin-right: 10rpx;
+  padding: 10rpx 5rpx;
+  background-color: yellow;
+  border-radius: 15rpx;
+  word-break: break-all;
+} */
+
+.self {
+  text-align: right;
+}
+
+.self .avatar-img {
+  float: right;
+  margin: -10rpx 0 0 0rpx;
+}
+
+.self .user {
+  margin: auto 5rpx 9rpx auto;
+  font-size: 25rpx;
+  color: #dcdcdc;
+}
+
+.self .msg {
+  background-color: #B1D3EC;
+  padding: 0 -10rpx;
+}
+
+.self .msg :before {
+  right: inherit;
+  left: 100%;
+  border-right-color: transparent;
+  border-left-color: #B1D3EC;
+}
+
+
+/* .ask-input-word {
+  width: 96%;
+  position: fixed;
+  padding: 5rpx;
+  bottom: 5rpx;
+  display: flex;
+  align-items: center;
+}
+
+.ask-input-word input {
+  background: white;
+  border-radius: 15rpx;
+  flex: 1;
+  margin-right: 10rpx;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+} */
+.room_bar {
+  width: 100%;
+  height: 90rpx;
+  border-top: 1px solid #CFCFCF;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #0066B2;
+}
+
+.send_btn {
+  width: 100rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 14px;
+  font-weight:600;
+  color: #0066B2;
+  padding: 0;
+  margin: 4px 8px auto auto;
+  background-color: #fff;
+}
+
+.room_bar form {
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  display: block;
+}
+
+.news {
+  background-color: #fff;
+  width: 70%;
+  height: 30px;
+  border: 1px solid #6cAAD9;
+  border-radius: 5px;
+  font-size: 14px;
+  padding-left: 4px;
+  margin: 4px 2px 4px 6px;
+}
+.yuyinimg{
+  position: relative;
+  margin-left: 10rpx;
+  margin-top: 12rpx;
+  width: 52rpx;
+  height: 52rpx;
+}
+.f-row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 7rpx;
+}
+
+

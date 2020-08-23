@@ -1,0 +1,119 @@
+.navigate{
+  margin-top: 20rpx;
+  width: 750rpx;
+  height: 62rpx;
+}
+
+.search-border{
+  float: left;
+  border-style: solid;
+  border-radius: 15rpx;
+  border-width: 1rpx;
+  border-color: #0066B2;
+  width: 570rpx;
+  height: 62rpx;
+  margin-left: 20rpx;
+}
+
+.search{
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+}
+
+.input{
+  float: left;
+  width: 80%;
+  height: 100%;
+}
+
+.icon{
+  float: left;
+  width: 10%;
+  height: 100%;
+}
+
+.done{
+  padding: 0rpx;
+  float: left;
+  width: 120rpx;
+  height: 65rpx;
+  margin-left: 20rpx;
+  border-style: solid;
+  border-radius: 15rpx;
+  border-width: 1rpx;
+  border-color: #0066B2;
+  background-color: #B1D3EC;
+  color: white;
+  font-size: 35rpx;
+  font-weight: 1000;
+  line-height: 63rpx;
+}
+
+.tabbar {
+  margin-top: 20rpx;
+  width: 750rpx;
+  height: 110rpx;
+  line-height: 105rpx;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 32rpx;
+  background-color: #B1D3EC;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.tabbar_item {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ontop {
+  background-color: #6CAAD9;
+  border-bottom: solid 2px #285577;
+}
+
+.food-column{
+  margin: 0 0 0 0;
+  border-top: solid 1px #ebebeb;
+  border-bottom: solid 2px #ebebeb;
+}
+.food{
+  width: 750rpx;
+  height: 172rpx;
+  background: #ffffff;
+  padding: 0;
+  border-bottom: solid 1px #ebebeb;
+}
+.food-pic{
+  margin-top: 28rpx ;
+  margin-left: 28rpx ;
+  flex: 1;
+}
+.food-column .food .food-pic image{
+  width: 116rpx;
+  height: 116rpx;
+}
+.food-word{
+  margin-left: 28rpx;
+  flex: 5;
+  text-align: left;
+  line-height: 60rpx;
+  padding: 30rpx 0;
+}
+
+.food-word1{
+  font-size: 34rpx;
+  color: #0066B2;
+}
+
+.food-word2{
+  font-size: 26rpx;
+  color: #B1D3EC;
+}
+
+.swiper-box{
+  height: 1500rpx;
+}
